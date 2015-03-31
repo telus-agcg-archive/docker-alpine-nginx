@@ -14,6 +14,14 @@ This image builds the latest version (1.7.11) from source:
 ```sh
 docker run -it --rm connexiolabs/alpine-nginx:1.7.11 sh
 
-/etc/nginx # nginx -v
+> nginx -v
 nginx version: nginx/1.7.11
+```
+
+Built image currently weighs in at 28.1 MB:
+
+```sh
+❯ docker images | grep connexiolabs/alpine-nginx
+connexiolabs/alpine-nginx                     latest              4cbcc8520cc0        2 minutes ago       28.1 MB
+connexiolabs/alpine-nginx                     1.7.11              1ae08c4d8414        16 minutes ago      28.1 MB
 ```
